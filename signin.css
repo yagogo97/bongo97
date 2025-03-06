@@ -1,0 +1,175 @@
+/* General Styles for Signup and Tracking Pages */
+.body {
+  background-color: rgba(0, 0, 0, 0.945);
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  font-style: unset;
+  text-decoration: solid;
+  color: brown;
+  font-family: cursive;
+  text-shadow: 2px 2px 5px whitesmoke;
+  font-size: 1.5rem;
+}
+
+.lists {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.lists li {
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#button {
+  background: brown;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#button:hover {
+  background: #8b4513;
+}
+
+/* Signin Page Specific Styles */
+#sigin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#signin-form input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  color: white;
+  font-size: 1rem;
+}
+
+#signin-form input::placeholder {
+  color: rgb(184, 184, 184);
+}
+
+#signin-form button {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+#signin-form button:hover {
+  opacity: 0.9;
+}
+
+#signin-form p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#signin-form p a {
+  color: brown;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#signin-form p a:hover {
+  text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .lists {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #button {
+    margin-left: 0;
+  }
+
+  /* Signup Page */
+  #signup-form {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Tracking Page */
+  #tracking-results {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .lists {
+    gap: 5px;
+  }
+
+  /* Signup Page */
+  #signup-form {
+    padding: 1rem;
+  }
+
+  #signup-form input {
+    font-size: 0.9rem;
+  }
+
+  #signup-form button {
+    font-size: 0.9rem;
+  }
+
+  /* Tracking Page */
+  #tracking-results h2 {
+    font-size: 1.5rem;
+  }
+
+  #tracking-results p {
+    font-size: 1rem;
+  }
+}

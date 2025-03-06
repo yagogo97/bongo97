@@ -1,0 +1,119 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .lists {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #button {
+    margin-left: 0;
+  }
+
+  /* Main Content */
+  .both {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    word-spacing: normal;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #input-field {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .submit-button {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Cards Section */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  /* Why Us Section */
+  .dis {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dis .card {
+    width: 80%;
+  }
+
+  /* Footer */
+  .example-2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .lists {
+    gap: 5px;
+  }
+
+  /* Main Content */
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .shipment {
+    font-size: 1rem;
+  }
+
+  /* Cards Section */
+  .card p.tip {
+    font-size: 1rem;
+  }
+
+  .card p.second-text {
+    font-size: 0.8rem;
+  }
+
+  /* Why Us Section */
+  .whyus {
+    font-size: 1.5rem;
+  }
+
+  .dis .card {
+    width: 90%;
+  }
+
+  /* Footer */
+  .conn {
+    font-size: 1.2rem;
+  }
+}
